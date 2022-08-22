@@ -1,0 +1,16 @@
+<form action="/action_page.php" #myForm="ngForm" (ngSubmit)="onSignUp(myForm)">
+    <div class="container">
+      <h1> READER LOGIN </h1><br>
+      <label><b>Username</b></label>
+      <input type="text" ngModel placeholder="Enter Username" #uname="ngModel" name="uname" required> <br>
+  
+      <label><b>Password</b></label>
+      <input type="password" ngModel placeholder="Enter Password" #pwd="ngModel" name="pwd" required> <br>
+  
+      <button type="submit">Login</button>
+    </div>
+    <div class="container signin">
+
+    <p>New to this site? <button (click)="createAccount()">Create Account</button></p>
+    </div>
+  </form>
